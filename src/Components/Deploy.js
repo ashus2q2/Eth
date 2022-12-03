@@ -73,11 +73,12 @@ function Deploy() {
   //     // console.log("email", email)
 
   return (
-    <div className="text-center h-auto bg-black pt-10 text-white font-semibold items-center justify-between ">
-      <div className="">
-        <h1 className="border-b-4 pb-3 justify-start items-start ml-[-10%] max-w-[35%] border-b-[#40f0f8] text-2xl ">
-          Deploy
-        </h1>
+    <div className="text-center h-auto bg-black pt-10 p-5  font-semibold items-center justify-between ">
+      
+      <p className=" pr-[20px] border-b-4 pb-3 border-b-[#40f0f8] w-40 text-2xl font-bold text-white ">Deploy</p>
+
+      <div className="w-full flex justify-center items-center">
+      <div className=" bg-[#ecf0f3] pb-5 pr-5 rounded-2xl border-spacing-4 border border-gray-400 border-x-2 border-y-4 sm:max-w-[60%]">
 
         <br />
         <br />
@@ -199,12 +200,12 @@ function Deploy() {
         <br />
 
         <button
-          className="-full p-4 bg-gradient-to-r from-[#00acb54a] to-[#40f0f8] hover:bg-[#40f0f8]  rounded-xl text-xl font-bold text-white mx-4"
+          className="-full p-4 bg-gradient-to-r bg-black hover:bg-gray-800 rounded-xl text-xl font-bold text-white mx-4"
           onClick={deployContract}
         >
           Deploy Contract
         </button>
-   
+        </div>
       </div>
     </div>
   );
